@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email - Librería El Faro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../email/email.css"> 
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body class="body-faro-cronicas">
+
+    <header class="header">
+        <div class="header-nav-contenedor">
+            <div class="nav-arriba">
+                <span class="nav-titulo">Contacto</span>
+                <span class="nav-elfaro">El Faro</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-cronicas">
+        <h2 class="seccion-titulo-medieval">Envia una consulta</h2>
+        <p class="seccion-subtitulo-medieval">Haznos llegar tus dudas, pedidos de tomos especiales o consultas</p>
+
+        <div class="contenedor-formulario-medieval">
+            <form id="form-contacto">
+                
+                <div class="fila-formulario">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Alejandro">
+                        <span class="error-txt" id="error-nombre"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ej. Duarte">
+                        <span class="error-txt" id="error-apellido"></span>
+                    </div>
+                </div>
+                <div class="fila-formulario">
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                        <span class="error-txt" id="error-correo"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Ej. +595981123456">
+                        <span class="error-txt" id="error-telefono"></span>
+                    </div>
+                </div>
+                <div class="fila-formulario">
+                    <div class="grupo-formulario">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Motivo de la consulta">
+                        <span class="error-txt" id="error-asunto"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="tipo_consulta">Tipo de Consulta</label>
+                       <input type="text" id="tipo_consulta" name="tipo_consulta" placeholder="consulta acerca de">
+                        <span class="error-txt" id="error-tipo"></span>
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escriba el mensaje aquí..."></textarea>
+                    <span class="error-txt" id="error-mensaje"></span>
+                </div>
+
+                <button type="submit" id="btn-enviar" class="btn-ver-mas-medieval btn-formulario">ENVIAR</button>
+                
+                <div id="mensaje-exito" class="alerta-form exito-form">¡La consulta ha sido enviada con éxito a los archivistas!</div>
+                <div id="mensaje-error-general" class="alerta-form error-general-form">Hubo un problema con la conexión de la red, por favor reintente.</div>
+
+
+                <a href="../index.html" class="btn-ver-mas-medieval btn-volver-medieval">
+                <i class="fa-solid fa-arrow-left"></i> VOLVER AL INICIO
+                </a>
+
+            </form>
+        </div>
+    </main>
+     <button id="btn-modo" class="btn-flotante-modo" title="Cambiar Era Estética">
+    <i class="fa-solid fa-moon" id="icono-modo"></i>
+    </button>
+
+    <script src="../java/modo-oscuro.js"></script>
+    <script src="email.js"></script>
+</body>
+</html>

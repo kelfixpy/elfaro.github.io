@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería El Faro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href=""><img src="imagen/logito.png" alt="Logo Librería El Faro" height="100px" width="100px"></a>
+        </div>
+
+        <nav class="header-nav-contenedor">
+        <div class="nav-arriba">
+             <div>
+                <h1 class="nav-elfaro">EL FARO</h1>
+                <h2 class="nav-titulo">Géneros</h2>
+             </div>
+             <div class="nav-botones-derecha">
+             <div class="carrito-header">
+                <span class="icono-carrito">🛒</span>
+                <span class="contador-carrito" id="contadorCarrito">0</span>
+            </div>
+            <button class="hamburguesa">
+                <span class="barrita"></span>
+                <span class="barrita"></span>
+                <span class="barrita"></span>
+            </button>
+            </div>
+            </div>
+            <div class="nav-links">
+                <a href="paginas/clasico.html" class="nav-item">Clásicos</a>
+                <a href="paginas/fantasia.html" class="nav-item">Fantasía</a>
+                <a href="paginas/filosofia.html" class="nav-item">Filosofía</a>
+                <a href="paginas/realismo.html" class="nav-item">Realismo</a>
+                <a href="paginas/poemario.html" class="nav-item">Poemario</a>
+                <a href="paginas/romance.html" class="nav-item">Romance</a>
+                <a href="paginas/historica.html" class="nav-item">Novela Histórica</a>
+                <a href="paginas/misterio.html" class="nav-item">Misterio y Suspenso</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="carrusel">
+        
+        <div class="carrusel-fotos">
+            <div class="foto-slide active">
+                <img src="imagen/carrusel1.png">
+                <div class="carrusel-texto">
+                    <h2>Descubre Historias Olvidadas</h2>
+                    <p>Un refugio para las almas amantes de la literatura clásica.</p>
+                </div>
+            </div>
+            <div class="foto-slide">
+                <img src="imagen/carrusel2.png">
+                <div class="carrusel-texto">
+                    <h2>Literatura Clasica del siglo XIX</h2>
+                    <p>Grandes Clasicos y Todos los generos en nuestra biblioteca.</p>
+                </div>
+            </div>
+             <div class="foto-slide">
+                <img src="imagen/carrusel3.png">
+                <div class="carrusel-texto">
+                    <h2>Los Libros que buscas aqui</h2>
+                    <p>Las historias que aun no imaginas,esperando a que los descubras.</p>
+                </div>
+            </div>
+             <div class="foto-slide">
+                <img src="imagen/carrusel4.png">
+                <div class="carrusel-texto">
+                    <h2>Mundos de fantasia</h2>
+                    <p>Tu proxima gran aventura epica comienza aqui.</p><br>
+                    <p>El viaje de un heroe</p><br>
+                    <p>Criaturas fantasticas</p><br>
+                    <p>Mundos lejanos</p><br>
+                    <p>Intervencion divina</p>
+                </div>
+            </div>
+             <div class="foto-slide">
+                <img src="imagen/carrusel5.jpeg">
+                <div class="carrusel-texto">
+                    <h2>Los mejores autores de la Literatura</h2>
+                    <p>Los pilares clasicos:</p>
+                    <p>Homero, Miguel de Cervantes, William Shakespeare</p><br>
+                    <p>Maestros de la literatura Hispana:</p>
+                    <p>Gabriel Garcia Marquez, Jorge Luis Borges, Isabel Allende, Julio Cortazar</p><br>
+                    <p>Novela Universal:</p>
+                    <p>Fiodor Dostoyevski, Jane Austen, Ernest Hemingway, J.R.R Tolkien</p>
+                </div>
+            </div>
+             <div class="foto-slide">
+                <img src="imagen/carrusel6.jpg">
+                <div class="carrusel-texto">
+                    <h2>Suspenso y Misterio</h2>
+                    <p>Los misterios que buscas,solo estan presentes en la LIBRERIA EL FARO</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="flecha prev" >&#10094;</button>
+        <button class="flecha next" >&#10095;</button>
+
+        <div class="carrusel-indicadores">
+            <span class="punto active"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div> 
+    </section>
+
+    <section class="seccion-presentacion">
+        <div class="presentacion-contenido">
+        <h2 class="titulo">El Faro: Cafe, libros y buena compañia</h2>
+        <p class="parrafo">
+            Establecimos este espacio para el lector, donde la seleccion 
+            critica de obras fundamentales como filosofia, historia y literatura clasica 
+            es nuestro compromiso.No somos solo una libreria, sino un punto de 
+            referencia intelectual, en nuestras estanterías no solo encontrarás papel
+            y tinta, sino portales hacia épocas doradas, mitologías olvidadas y el pensamiento 
+            de los filósofos más grandes de la historia. Cada libro ha sido seleccionado para mentes
+            dispuestas a naufragar en las profundidades del conocimiento.
+        </p>
+        </div>
+    </section>
+
+    <section class="seccion-beneficio">
+    <div class="grid-beneficio">
+        <div class="tarjeta-beneficio">
+            <div class="icono-rustico">📜</div>
+            <h3>Ediciones de Colección</h3>
+            <p>Seleccionamos las mejores obras en formatos exclusivos, tapas duras y papel papiro de alta calidad.</p>
+        </div>
+        <div class="tarjeta-beneficio">
+            <div class="icono-rustico">⛵</div>
+            <h3>Distribucion y Envios</h3>
+            <p>Embalaje especializado de alta proteccion para asegurar la perfecta conservacion de cada volumen desde 
+            nuestra libreria hasta sus manos.</p>
+        </div>
+        <div class="tarjeta-beneficio">
+            <div class="icono-rustico">🦉</div>
+            <h3>Consultoria Literaria</h3>
+            <p>Nuestro equipo ofrece una guia para recomendarte lecturas según el interes o area que desees explorar.</p>
+        </div>
+    </div>
+   </section>
+
+   <section class="seccion-catalogo">
+    <h2 class="titulo-rustico">Nuestras Mejores Obras</h2>
+    
+    <div class="grid-producto">
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Clasica</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro1.jpg">
+            </div>
+            <div class="producto-info">
+                <h3>El Principito</h3>
+                <p class="producto-descripcion">Un piloto varado en el desierto se encuentra con un pequeño principe de otro planeta.</p>
+                <div class="producto-precio">G 150.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Fantasía Épica</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro2.jpg">
+            </div>
+            <div class="producto-info">
+                <h3>El Señor de los anillos</h3>
+                <p class="producto-descripcion">Un pequeño hobbit llamado Frodo emprende un viaje junto a su compañia.</p>
+                <div class="producto-precio">G 320.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Satira</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro3.jpg">
+            </div>
+            <div class="producto-info">
+                <h3>Don Quijote de la Mancha</h3>
+                <p class="producto-descripcion">Un hidalgo enloquece leyendo libros y busca aventuras como caballero junto a su compañero.</p>
+                <div class="producto-precio">G 305.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Realismo</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro4.jpeg">
+            </div>
+            <div class="producto-info">
+                <h3>El niño con piyama a rayas</h3>
+                <p class="producto-descripcion">Un niño nazi crea amistad junto con un niño judio durante la segunda guerra mundial.</p>
+                <div class="producto-precio">G 450.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Romance</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro5.png">
+            </div>
+            <div class="producto-info">
+                <h3>Noches Blancas</h3>
+                <p class="producto-descripcion">Un joven conoce a una mujer en las noches blancas de San Petersburgo ,entablando un amor imposible.</p>
+                <div class="producto-precio">G 400.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-producto">
+            <div class="producto-categoria">Fantasia</div>
+            <div class="producto-imagen">
+                <img src="imagen/libro6.jpeg">
+            </div>
+            <div class="producto-info">
+                <h3>El Mago de Oz</h3>
+                <p class="producto-descripcion">Una niña Dorothy, se sumerge en un mundo magico junto a sus amigos.</p>
+                <div class="producto-precio">G 320.000</div>
+                <button class="btn-vermas">VER MAS</button>
+            </div>
+        </article>
+    </div>
+    </section>
+    <section class="seccion-testimonios">
+        <div class="testimonios-contenedor">
+            <h2 class="testimonios-titulo">Testimonios de Clientes</h2>
+            <p class="testimonios-subtitulo">"Ecos y reseñas dejadas por los lectores que frecuentan nuestro local."</p>
+            <div class="grid-testimonios">
+                
+                <!-- Comentario 1 -->
+                <div class="tarjeta-testimonio">
+                    <div class="cabecera-comentario">
+                        <div class="avatar-comentario">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#c4a46a"/>
+                            </svg>
+                        </div>
+                        <div class="info-autor-comentario">
+                            <h4 class="autor-testimonio">AlejandroMartinez</h4>
+                        </div>
+                    </div>
+                    <div class="estrellas-medievales">★★★★</div>
+                    <p class="texto-testimonio">
+                        Encontrar la edición de las Rimas de Bécquer que se restauro manualmente fue como hallar
+                         un tesoro en mitad del océano. El aroma a papel antiguo y la atención de sus archivistas
+                         es inigualable. Volveré sin duda
+                    </p>
+                </div>
+                <!-- Comentario 2 -->
+                <div class="tarjeta-testimonio">
+                    <div class="cabecera-comentario">
+                        <div class="avatar-comentario">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#c4a46a"/>
+                            </svg>
+                        </div>
+                        <div class="info-autor-comentario">
+                            <h4 class="autor-testimonio">Beatriz Gomez</h4>
+                        </div>
+                    </div>
+                    <div class="estrellas-medievales">★★★★★</div>
+                    <p class="texto-testimonio">
+                        Los envíos nacionales al interior estan muy bien. El paquete
+                        llegó sellado y bien empaquetado, todos los pedidos llegaron impecables.
+                        Una librería con un verdadero servicio.
+                    </p>
+                </div>
+                <!-- Comentario 3 -->
+                <div class="tarjeta-testimonio">
+                    <div class="cabecera-comentario">
+                        <div class="avatar-comentario">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#c4a46a"/>
+                            </svg>
+                        </div>
+                        <div class="info-autor-comentario">
+                            <h4 class="autor-testimonio">Marquitoos</h4>
+                        </div>
+                    </div>
+                    <div class="estrellas-medievales">★★★★★</div>
+                    <p class="texto-testimonio">
+                        la sala de lectura es la mejor ,el ambiente rustico es fachero,purete es venir una tarde 
+                        con lluvia y leer libros de historia que encontre.pejupantema gente.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer-faro-gremial">
+        <div class="footer-grid-contenedor">
+            
+           <!-- COLUMNAA 1 REDEEES SOCIALEEES-->
+            <div class="footer-columna col-identidad">
+                <h3 class="footer-titulo-col">El Faro</h3>
+                <p class="footer-descripcion">"Guiando a los navegantes a través de los océanos de papel
+                y la literatura"</p>
+                <div class="footer-redes">
+                 <a href="https://www.facebook.com/share/1KLFQpDqz8/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/elfaro6431?igsh=aWd1aGFtazAzdmk2" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://x.com/Elfaroo08h" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+            <!-- CONTACTOO HORARIOS -->
+            <div class="footer-columna">
+                <h3 class="footer-titulo-col">Contacto</h3>
+                <ul class="footer-lista-info">
+                    <li><strong>Ciudad:</strong> Altos, Cordillera, Paraguay</li>
+                    <li><strong>Dirección:</strong> Calle Mariscal Lopez Nº 3341</li>
+                    <li><strong>Teléfono:</strong> +595 983 884 841</li>
+                    <li><strong>Correo:</strong> jjesussz07@gmail.com</li>
+                    <li><strong>Atención:</strong> Lunes a Sábados — 08:00 a 20:00 hs.</li>
+                </ul>
+            </div>
+            <!-- NAVEGACIOOOON -->
+            <div class="footer-columna">
+                <h3 class="footer-titulo-col">Navegacion</h3>
+                <ul class="footer-lista-links">
+                    <li><a href="hamburguesa/noticia.html">Crónicas y Noticias</a></li>
+                    <li><a href="hamburguesa/nosotros.html">Nosotros</a></li>
+                    <li><a href="email/email.html">Contactanos</a></li>
+                    <li><a href="paginas/privacidad.html" class="link-legal">Política de Privacidad</a></li>
+                    <li><a href="#">Volver</a></li>
+                </ul>
+            </div>
+            <!-- UBICACIOOOON -->
+           <div class="footer-columna col-mapa">
+    <h3 class="footer-titulo-col">Ubicación</h3>
+    <div class="contenedor-mapa-rustico">
+        <iframe 
+            src="https://maps.google.com/maps?q=-25.297835845555493,-57.26634056279521&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="150" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+        </div>
+        <!-- Copyright -->
+        <div class="footer-barra-inferior">
+            <p>&copy; 2026 Librería El Faro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--PANEL DE LA HAMBURGUESA-->
+   <div class="panel" id="paneloculto">
+    <button class="btn-cerrar-panel">&times;</button>
+    
+    <div class="panel-contenido">
+        <h3>MENÚ EL FARO</h3>
+        
+        <nav class="panel-navegacion">
+            <a href="hamburguesa/empresa.html" class="panel-link">🏛️ La Empresa</a>
+            <a href="hamburguesa/nosotros.html" class="panel-link">⛵ Nosotros</a>
+            <a href="hamburguesa/desarrolador.html" class="panel-link">🛠️ Desarrolladores</a>
+            <a href="hamburguesa/noticia.html" class="panel-link">🔮 Noticias</a>
+            <a href="email/email.html" class="panel-link">📜 Contacto</a>
+            <a href="hamburguesa/autor.html" class="panel-link">🦉 Autores</a>
+        </nav>
+    </div>
+</div>
+    <!--VENTANA MODAAAL-->
+    <div class="modal-libreria" id="modalLibro">
+    <div class="modal-contenedor-rustico">
+        <button class="modal-cerrar">&times;</button>
+        
+        <div class="modal-cuerpo">
+            <div class="modal-col-izquierda">
+                <img id="modalImagen" src="imagen/libro1.jpg" alt="Portada del Libro">
+            </div>
+            
+            <div class="modal-col-derecha">
+                <span id="modalCategoria" class="modal-tag">Filosofía</span>
+                <h2 id="modalTitulo">ejejmplo</h2>
+                <h4 class="modal-autor">Autor: <span id="modalAutorText">nose</span></h4>
+                <h5 class="modal-fecha">Publicación: <span id="modalFechaText">ejeplo</span></h5>
+                
+                <h3>Síntesis de la Historia</h3>
+                <p id="modalSintesis"></p>
+                
+                <div class="modal-footer">
+                    <div id="modalPrecio" class="modal-precio">$25.000ejemplo</div>
+                    <button class="btn-agregar-carrito">
+                        <span>🛒</span> Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    <button id="btn-modo" class="btn-flotante-modo" title="Cambiar Era Estética">
+    <i class="fa-solid fa-moon" id="icono-modo"></i>
+    </button>
+  
+    <script src="java/script.js"></script>
+    <script src="java/modo-oscuro.js"></script>
+
+</body>
+</html>
